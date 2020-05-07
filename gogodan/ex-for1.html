@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>갯수와 합</h1>
+    <script>
+      // let sum = 0;
+
+      // while (true) {
+      //   let s = +prompt(
+      //     "합을 구할 숫자들을 입력해주세요. (0을 입력하면 입력이 종료됩니다)"
+      //   );
+      //   if (s === 0) break;
+      //   sum += s;
+      // }
+
+      // document.write(`합계: ${sum}`);
+
+      let sum = 0;
+      let n = -1;
+      let count = -1; // 종료를 위한 0까지 카운트되기 때문
+
+      while (n != 0) {
+        n = Number(
+          prompt("숫자들을 입력해주세요. (0을 입력하면 입력이 종료됩니다)")
+        );
+        sum += n;
+        count++;
+        console.log(count, n, sum);
+      }
+
+      document.write(`입력한 ${count} 수의 합은 ${sum}입니다.`);
+    </script>
+  </body>
+</html>

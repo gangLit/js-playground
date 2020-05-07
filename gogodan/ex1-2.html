@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>연습문제 1-2</h1>
+    <script>
+      let weight = Number(prompt("체중을 입력하세요. (kg)"));
+      let height = Number(prompt("신장을 입력하세요. (cm)")) / 100;
+      let bmi = Number(weight / height ** 2).toFixed(2);
+
+      document.write(`체중 : ${weight}kg\n신장 : ${height}m\nBMI : ${bmi}`);
+    </script>
+  </body>
+</html>

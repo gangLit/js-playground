@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>자바스크립트 연습장</h2>
+    <p id="demo">몇 시인가요?</p>
+  </body>
+  <script>
+    const demo = document.getElementById("demo");
+    let size = 10;
+    function big() {
+      demo.style.fontSize = size + "px";
+      size = size + 1;
+    }
+
+    const tid = setInterval(big, 100);
+  </script>
+</html>
